@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -106,7 +105,7 @@ body {
 
 /* line 68, ../sass/_main.scss */
 p {
-  line-height: 1.8em;
+  line-height: 1.6em;
   margin-bottom: 1.1em;
 }
 /* line 71, ../sass/_main.scss */
@@ -298,9 +297,11 @@ p a {
 /* line 5, ../sass/inkling.scss */
 body {
   font-family: "Whitney SSm A", "Whitney SSm B", "Helvetica", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  line-height: 1.2em;
   margin-top: 8em;
-  color: #444;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
 }
 @media only screen and (max-width: 500px) {
   /* line 5, ../sass/inkling.scss */
@@ -309,296 +310,177 @@ body {
   }
 }
 
-/* line 15, ../sass/inkling.scss */
+/* line 17, ../sass/inkling.scss */
 header {
   margin-bottom: 2em;
 }
-/* line 17, ../sass/inkling.scss */
-header .subtitle {
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-}
-/* line 22, ../sass/inkling.scss */
+/* line 19, ../sass/inkling.scss */
 header img.logo {
   margin-top: 1em;
   display: block;
 }
 
-/* line 28, ../sass/inkling.scss */
-section.intro {
-  width: 100%;
+/* line 24, ../sass/inkling.scss */
+.teaser {
+  width: 58.33333%;
   padding-right: 1em;
-  -moz-columns: 2;
-  -webkit-columns: 2;
-  columns: 2;
-  -moz-column-gap: 4em;
-  -webkit-column-gap: 4em;
-  column-gap: 4em;
+  float: left;
+  font-size: 2.2rem;
+  font-style: italic;
 }
 @media only screen and (max-width: 768px) {
-  /* line 28, ../sass/inkling.scss */
-  section.intro {
+  /* line 24, ../sass/inkling.scss */
+  .teaser {
     width: 100%;
     padding-right: 0;
   }
 }
-@media only screen and (max-width: 768px) {
-  /* line 28, ../sass/inkling.scss */
-  section.intro {
-    -moz-columns: 1;
-    -webkit-columns: 1;
-    columns: 1;
-  }
-}
 
-/* line 38, ../sass/inkling.scss */
-hr {
-  position: absolute;
-  left: 0;
-  right: 0;
-  border: 0;
-  height: 1px;
-  background-color: #f1f1f1;
-}
-
-/* line 47, ../sass/inkling.scss */
-em {
-  color: #009b9d;
-  font-weight: 500;
-}
-
-/* line 52, ../sass/inkling.scss */
-.passage {
-  padding-top: 4em;
-  padding-bottom: 4em;
+/* line 30, ../sass/inkling.scss */
+.roles {
+  width: 33.33333%;
+  padding-right: 1em;
+  float: left;
 }
 @media only screen and (max-width: 768px) {
-  /* line 52, ../sass/inkling.scss */
-  .passage {
-    padding-top: 2em;
-    padding-bottom: 2em;
-  }
-}
-/* line 61, ../sass/inkling.scss */
-.passage > p {
-  width: calc(100%*8/12);
-  margin-left: calc(100%*2/12);
-}
-@media only screen and (max-width: 768px) {
-  /* line 61, ../sass/inkling.scss */
-  .passage > p {
+  /* line 30, ../sass/inkling.scss */
+  .roles {
     width: 100%;
-    margin-left: 0;
+    padding-right: 0;
   }
 }
-/* line 70, ../sass/inkling.scss */
-.passage h2 {
-  position: relative;
-  padding-top: 2em;
-  padding-bottom: 3em;
-  text-align: center;
-  font-family: "Surveyor SSm A", "Surveyor SSm B", "Georgia", serif;
-  font-size: 2.4rem;
-  color: #009b9d;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  overflow: visible;
-  width: 100%;
+/* line 33, ../sass/inkling.scss */
+.roles li {
+  margin-bottom: 1em;
 }
-/* line 83, ../sass/inkling.scss */
-.passage h2:after {
-  content: '';
-  display: block;
-  border-bottom: 1px solid #009b9d;
-  width: calc(100%*2/12);
-  margin: 0 auto;
-  height: 1px;
-  margin-top: .7em;
-}
-@media only screen and (max-width: 768px) {
-  /* line 70, ../sass/inkling.scss */
-  .passage h2 {
-    padding-bottom: 1.5em;
-  }
-}
-/* line 97, ../sass/inkling.scss */
-.passage h3 {
-  color: #333;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-align: center;
-  font-weight: 500;
-  font-size: 1.6rem;
-  padding-top: 3em;
-  padding-bottom: 2em;
-}
-/* line 108, ../sass/inkling.scss */
-.passage .media + h3 {
-  padding-top: 4em;
-}
-/* line 113, ../sass/inkling.scss */
-.passage h3 + .media figure {
-  margin-top: 2em;
+/* line 35, ../sass/inkling.scss */
+.roles li p {
+  margin-bottom: 0;
 }
 
+/* line 41, ../sass/inkling.scss */
+.detail {
+  color: #888;
+}
+
+/* line 45, ../sass/inkling.scss */
+.media {
+  width: 58.33333%;
+  padding-right: 1em;
+}
+@media only screen and (max-width: 768px) {
+  /* line 45, ../sass/inkling.scss */
+  .media {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+/* line 47, ../sass/inkling.scss */
+.media figure {
+  margin-bottom: 2em;
+}
+/* line 49, ../sass/inkling.scss */
+.media figure img {
+  width: auto;
+  max-width: 100%;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+  margin-bottom: .5em;
+}
+/* line 55, ../sass/inkling.scss */
+.media figure figcaption {
+  -moz-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out;
+  -webkit-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+  pointer-events: none;
+  opacity: 0;
+  font-size: 1.2rem;
+  color: #aaa;
+  font-weight: 500;
+  font-style: italic;
+}
+/* line 65, ../sass/inkling.scss */
+.media figure:hover figcaption {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* line 73, ../sass/inkling.scss */
+.main-section {
+  margin: 2em 0;
+}
 /* line 33, ../sass/_main.scss */
-.media:after {
+.main-section:after {
   content: ".";
   visibility: hidden;
   display: block;
   height: 0;
   clear: both;
 }
-/* line 123, ../sass/inkling.scss */
-.media:hover figure img {
-  opacity: 1;
+/* line 76, ../sass/inkling.scss */
+.main-section h2 {
+  border-top: 1px solid #eee;
+  font-weight: 300;
+  color: #009b9d;
+  font-size: 3.4rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: 2em 0 1em 0;
 }
-/* line 128, ../sass/inkling.scss */
-.media.full-bleed {
-  width: auto;
-  margin-left: -8.3%;
-  margin-right: -8.3%;
+/* line 85, ../sass/inkling.scss */
+.main-section h3 {
+  font-weight: 600;
+  font-color: #111;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: .5em;
+}
+/* line 92, ../sass/inkling.scss */
+.main-section > p {
+  width: 58.33333%;
+  padding-right: 1em;
 }
 @media only screen and (max-width: 768px) {
-  /* line 128, ../sass/inkling.scss */
-  .media.full-bleed {
-    margin: 0;
+  /* line 92, ../sass/inkling.scss */
+  .main-section > p {
+    width: 100%;
+    padding-right: 0;
   }
 }
-/* line 137, ../sass/inkling.scss */
-.media figure {
-  margin-top: 4em;
-  margin-bottom: 4em;
-}
-/* line 140, ../sass/inkling.scss */
-.media figure:last-child {
-  margin-bottom: 1em;
-}
-/* line 143, ../sass/inkling.scss */
-.media figure img {
-  -moz-transition: opacity 0.5s ease-out;
-  -o-transition: opacity 0.5s ease-out;
-  -webkit-transition: opacity 0.5s ease-out;
-  transition: opacity 0.5s ease-out;
-  opacity: .4;
-  width: auto;
-}
-/* line 147, ../sass/inkling.scss */
-.media figure img:hover {
-  cursor: pointer;
-}
-/* line 150, ../sass/inkling.scss */
-.media figure img.active {
-  opacity: 1;
-}
-/* line 156, ../sass/inkling.scss */
-.media figure.width-one-whole img {
-  max-width: 100%;
-}
-/* line 159, ../sass/inkling.scss */
-.media figure.width-one-whole figcaption {
-  padding-top: 1em;
-  text-align: center;
-}
-/* line 164, ../sass/inkling.scss */
-.media figure.caption-right, .media figure.caption-left {
-  overflow: auto;
+/* line 95, ../sass/inkling.scss */
+.main-section .sub-section {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
+  padding: 2.5em 0;
 }
-/* line 169, ../sass/inkling.scss */
-.media figure.caption-right img, .media figure.caption-left img {
-  width: 50%;
+/* line 99, ../sass/inkling.scss */
+.main-section .sub-section .content {
+  width: 33.33333%;
   padding-right: 1em;
-  height: auto;
-  margin-bottom: 1.5em;
-}
-@media only screen and (max-width: 768px) {
-  /* line 169, ../sass/inkling.scss */
-  .media figure.caption-right img, .media figure.caption-left img {
-    width: 100%;
-    padding-right: 0;
-  }
-}
-/* line 174, ../sass/inkling.scss */
-.media figure.caption-right figcaption, .media figure.caption-left figcaption {
-  width: 41.66667%;
-  padding-right: 1em;
-}
-@media only screen and (max-width: 768px) {
-  /* line 174, ../sass/inkling.scss */
-  .media figure.caption-right figcaption, .media figure.caption-left figcaption {
-    width: 100%;
-    padding-right: 0;
-  }
-}
-@media only screen and (max-width: 768px) {
-  /* line 164, ../sass/inkling.scss */
-  .media figure.caption-right, .media figure.caption-left {
-    display: block;
-  }
-}
-/* line 182, ../sass/inkling.scss */
-.media figure.caption-left img {
   -webkit-order: 2;
   order: 2;
+  padding: 0;
 }
-/* line 185, ../sass/inkling.scss */
-.media figure.caption-left figcaption {
+@media only screen and (max-width: 768px) {
+  /* line 99, ../sass/inkling.scss */
+  .main-section .sub-section .content {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+/* line 104, ../sass/inkling.scss */
+.main-section .sub-section .media {
+  width: 58.33333%;
+  padding-right: 1em;
   -webkit-order: 1;
   order: 1;
 }
-/* line 191, ../sass/inkling.scss */
-.media blockquote {
-  float: left;
-  width: calc(100%*5/12);
-  margin-top: 1em;
-  margin-bottom: 2em;
-  margin-right: calc(100%*1/12);
-  font-size: 1.2rem;
-}
-/* line 198, ../sass/inkling.scss */
-.media blockquote p {
-  position: relative;
-  font-family: "Surveyor SSm A", "Surveyor SSm B", "Georgia", serif;
-  quotes: "“" "”" "‘" "’";
-}
-/* line 202, ../sass/inkling.scss */
-.media blockquote p:before, .media blockquote p:after {
-  position: absolute;
-  font-size: 1.5em;
-  font-weight: 500;
-}
-/* line 207, ../sass/inkling.scss */
-.media blockquote p:before {
-  top: .1em;
-  left: -.7em;
-  content: open-quote;
-  margin-right: .1em;
-}
-/* line 213, ../sass/inkling.scss */
-.media blockquote p:after {
-  content: close-quote;
-  margin-left: .1em;
-}
-/* line 218, ../sass/inkling.scss */
-.media blockquote cite {
-  display: block;
-  width: 100%;
-  color: #009b9d;
-  text-align: right;
-}
-/* line 223, ../sass/inkling.scss */
-.media blockquote cite .cite-name {
-  font-weight: 500;
-}
-/* line 226, ../sass/inkling.scss */
-.media blockquote cite:before {
-  content: "- ";
+@media only screen and (max-width: 768px) {
+  /* line 104, ../sass/inkling.scss */
+  .main-section .sub-section .media {
+    width: 100%;
+    padding-right: 0;
+  }
 }

@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    scrolling(window, focusImage);
+    // scrolling(window, focusImage);
     var slideshow = makeSlideshow();
 });
 
@@ -108,7 +108,7 @@ function makeSlideshow() {
     })
 
     //Add event to jump to correct slideshow index when clicking on figure
-    $('.passage figure img').click(function(e) {
+    $('.main-section figure img').click(function(e) {
         e.preventDefault();
         var figIndex = $('figure').index($(this).parent());
         slideshow.attr('data-fig-index', figIndex);
